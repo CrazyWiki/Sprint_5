@@ -1,13 +1,8 @@
-from selenium import webdriver
 from selenium.webdriver.support import expected_conditions
 from selenium.webdriver.support.wait import WebDriverWait
-import pytest
 from urls_stellarburgers import Urls_burger
 from locators import *
 from data import FirstPersonData
-from time import sleep
-from selenium.webdriver.common.action_chains import ActionChains
-
 
 class TestLoginStellarBurger:
     def test_login_with_correct_login_password_main_page_success(self, driver):

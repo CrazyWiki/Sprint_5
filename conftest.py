@@ -1,13 +1,11 @@
 import pytest
 from selenium import webdriver
 from selenium.webdriver.support import expected_conditions
-
 from urls_stellarburgers import Urls_burger
 from data import FirstPersonData
 from locators import *
 from selenium.webdriver.support.wait import WebDriverWait
-from selenium.webdriver.chrome.options import Options
-from time import sleep
+
 
 @pytest.fixture
 def driver():

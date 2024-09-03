@@ -1,11 +1,8 @@
 from selenium import webdriver
 from selenium.webdriver.support import expected_conditions
 from selenium.webdriver.support.wait import WebDriverWait
-import pytest
 from urls_stellarburgers import Urls_burger
 from locators import *
-from data import FirstPersonData
-from time import sleep
 
 class TestForTransiteFromProfileAccountPage:
     def test_open_personal_account(self,input_user_data):
